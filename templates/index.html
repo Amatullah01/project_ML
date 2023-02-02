@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Color Pallete</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="/static/css/style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+</head>
+
+<body>
+  <section id="pageOne" style="display: none;">
+    <svg class="load-top" height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke-width="3" stroke="white" fill="black" />
+    </svg>
+    <div class="container">
+      <nav>
+        <p>Color Pallete Generator</i></p>
+        <p>
+          <i class="fa-brands fa-github"></i>
+          <span><a href="https://github.com/zaidananwar13">Fork me on git</a></span>
+        </p>
+      </nav>
+
+      <h1>Hello.</h1>
+
+      <div class="input-field">
+        <div class="quantity">
+          <div id="form-wrapper">
+            <p style="font-size: 1.4rem; margin: 20px;">Pick your pallete number</p>
+            <form>
+              <div id="debt-amount-slider">
+                <input checked type="radio" name="colors" id="1" value="2" required>
+                <label for="1" data-debt-amount="2 Colors"></label>
+                <input type="radio" name="colors" id="2" value="3" required>
+                <label for="2" data-debt-amount="3 Colors"></label>
+                <input type="radio" name="colors" id="3" value="4" required>
+                <label for="3" data-debt-amount="4 Colors"></label>
+                <input type="radio" name="colors" id="4" value="5" required>
+                <label for="4" data-debt-amount="5 Colors"></label>
+                <input type="radio" name="colors" id="5" value="6" required>
+                <label for="5" data-debt-amount="6 Colors"></label>
+                <div id="debt-amount-pos"></div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <button class="btn" onclick="selectFile()">
+          Pick an Image
+        </button>
+      </div>
+
+    </div>
+    <svg class="load-bot" height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke-width="3" stroke="white" fill="white" />
+    </svg>
+
+    <input type="file" id="imageInput" style="display: none;" onchange="colorGenerate()">
+  </section>
+
+  <section id="pageTwo">
+    <div class="container">
+      <h1>Welcome.</h1>
+    </div>
+    </div>
+  </section>
+
+  <section id="pageThree" style="display: none;">
+    <svg class="load-top" height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke-width="3" stroke="black" fill="white" />
+    </svg>  
+    <div class="container">
+      <h1>Loading
+        <div id="dots" class="dots"><span class="dot z"></span><span class="dot f"></span><span
+            class="dot s"></span><span class="dot t"><span class="dot l"></span></span></div>
+      </h1>
+    </div>
+    <svg class="load-bot" height="100" width="100">
+      <circle cx="50" cy="50" r="40" stroke-width="3" stroke="black" fill="black" />
+    </svg>
+  </section>
+
+
+
+  <script src="/static/js/script.js"></script>
+</body>
+
+</html>
